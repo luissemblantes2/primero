@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `cli_apellidos` varchar(50) CHARACTER SET utf8 NOT NULL,
   `cli_producto` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
   PRIMARY KEY (`cli_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla primero.clientes: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
@@ -28,7 +28,7 @@ INSERT INTO `clientes` (`cli_id`, `cli_nombres`, `cli_apellidos`, `cli_producto`
 	(2, 'Bryan', 'Morales', '(Caja Mascarillas) N95'),
 	(3, 'Johan', 'Morales', '(Caja Mascarillas)  FFP2'),
 	(4, 'Esteban', 'Zurita', '(Caja Mascarillas) AIRNATECH'),
-	(5, 'Misael', 'Estrella', '(Caja Mascarillas) TBOC');
+	(6, 'Misael', 'Estrella', '(Caja de Mascarillas) TBOC');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 
 -- Volcando estructura para tabla primero.ventas
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `ventas` (
   `ven_precio` varchar(50) NOT NULL,
   `ven_comprador` varchar(50) NOT NULL,
   PRIMARY KEY (`ven_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla primero.ventas: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `ventas` DISABLE KEYS */;
@@ -47,7 +47,7 @@ INSERT INTO `ventas` (`ven_id`, `ven_producto`, `ven_precio`, `ven_comprador`) V
 	(2, '(Caja de Mascarillas) KN95', '20$', 'Bryan Morales'),
 	(3, '(Caja de Mascarillas) FFP2', '20$', 'Johan Morales'),
 	(4, '(Caja de Mascarillas) AIRNATECH', '25$', 'Esteban Zurita'),
-	(5, '(Caja de Mascarillas) TBOC', '10$', 'Misael Estrella');
+	(6, '(Caja de Mascarillas) TBOC', '10$', 'Misael Estrella');
 /*!40000 ALTER TABLE `ventas` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
